@@ -39,7 +39,7 @@ export let totalReducer = (state = initialState, action) => {
       case REMOVE_FEATURE:
         return{
           ...state,
-          additionalPrice: state.additionalPrice - action.payload,
+          additionalPrice: state.additionalPrice - action.payload.price,
           car: {
             ...state.car,
             features: state.car.features.filter( item => item !== action.payload)
