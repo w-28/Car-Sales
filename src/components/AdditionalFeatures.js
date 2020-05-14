@@ -21,7 +21,7 @@ const AdditionalFeatures = props => {
 
 let mapStateToProps = state => {
   return {
-      additionalFeatures: state.car.additionalFeatures   
+      additionalFeatures: state.additionalFeatures
   }
 }
 
